@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (Simple)
 
 on:
   # Runs on pushes targeting the default branch
@@ -33,30 +33,11 @@ jobs:
         with:
           node-version: '20'
           
-      - name: Check directory structure
-        run: |
-          echo "Repository structure:"
-          ls -la
-          if [ -f "package.json" ]; then
-            echo "Found package.json in root"
-            echo "PROJECT_DIR=." >> $GITHUB_ENV
-          elif [ -f "bubble-wrap-surprise/package.json" ]; then
-            echo "Found package.json in bubble-wrap-surprise/"
-            echo "PROJECT_DIR=bubble-wrap-surprise" >> $GITHUB_ENV
-          else
-            echo "ERROR: Cannot find package.json"
-            exit 1
-          fi
-          
       - name: Install dependencies
-        run: |
-          cd $PROJECT_DIR
-          npm install
+        run: npm install
           
       - name: Build
-        run: |
-          cd $PROJECT_DIR
-          npm run build
+        run: npm run build
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -64,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.PROJECT_DIR }}/dist
+          path: dist
 
   # Deployment job
   deploy:
