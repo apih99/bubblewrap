@@ -1,13 +1,15 @@
 {
   "name": "bubble-wrap-surprise",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://apih99.github.io/bubblewrap",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -23,5 +25,18 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.2.0",
     "vite": "^7.0.0"
-  }
+  },
+  "keywords": [
+    "bubble-wrap",
+    "tiktok",
+    "viral",
+    "game",
+    "react",
+    "vite",
+    "sounds",
+    "surprise"
+  ],
+  "author": "apih99",
+  "description": "🫧 Bubble Wrap Surprise - Pop bubbles but expect the unexpected sounds! Perfect for TikTok content.",
+  "license": "MIT"
 }
