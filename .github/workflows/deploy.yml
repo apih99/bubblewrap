@@ -32,18 +32,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: bubble-wrap-surprise/package-lock.json
           
       - name: Install dependencies
-        run: |
-          cd bubble-wrap-surprise
-          npm ci
+        working-directory: bubble-wrap-surprise
+        run: npm install
           
       - name: Build
-        run: |
-          cd bubble-wrap-surprise
-          npm run build
+        working-directory: bubble-wrap-surprise
+        run: npm run build
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
