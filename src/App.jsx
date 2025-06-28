@@ -14,22 +14,22 @@ function App() {
   
   // Array of unexpected sounds (we'll create these files)
   const soundFiles = [
-    'public/sounds/wilhelm-scream.mp3',
-    'public/sounds/cat-meow.mp3',
-    'public/sounds/dial-up.mp3',
-    'public/sounds/opera.mp3',
-    'public/sounds/no-sound.mp3',
-    'public/sounds/rubber-duck.mp3',
-    'public/sounds/airhorn.mp3',
-    'public/sounds/wow.mp3',
-    'public/sounds/vine-boom.mp3',
-    'public/sounds/bruh.mp3'
+    'sounds/wilhelm-scream.mp3',
+    'sounds/cat-meow.mp3',
+    'sounds/dial-up.mp3',
+    'sounds/opera.mp3',
+    'sounds/no-sound.mp3',
+    'sounds/rubber-duck.mp3',
+    'sounds/airhorn.mp3',
+    'sounds/wow.mp3',
+    'sounds/vine-boom.mp3',
+    'sounds/bruh.mp3'
   ]
 
   const specialSounds = [
-    'public/sounds/golden-pop.mp3',
-    'public/sounds/jackpot.mp3',
-    'public/sounds/magic.mp3'
+    'sounds/golden-pop.mp3',
+    'sounds/jackpot.mp3',
+    'sounds/magic.mp3'
   ]
 
   // Initialize bubble grid
