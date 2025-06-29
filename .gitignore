@@ -96,8 +96,3 @@ jspm_packages/
 tmp/
 temp/
 
-# Audio files (users need to add these manually)
-public/sounds/*.mp3
-public/sounds/*.wav
-public/sounds/*.ogg
-!public/sounds/README.md
